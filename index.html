@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Kalkulator BMI</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Kalkulator BMI adalah aplikasi yang digunakan untuk menghitung berat badan ideal seseorang">
+      <meta name="author" content="Bayu Hari Septiawan">
+
+      <!-- menambahkan favicon .ico -->
+      <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+      <!-- Ini adalah Header -->
+      <!-- div Pertama adalah title -->
+      <!-- div kedua adalah navigation -->
+      <header>
+        <nav>
+          <div class="header-item title">Bayu Hari Septiawan</div>
+          <div class="header-item">
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Ini adalah main -->
+      <main>
+        <h3>Kalkulator BMI</h3>
+        <div class="container">
+
+          <!-- container item untuk form berada di posisi sebelah kiri -->
+          <div class="container-item">
+            <p>
+              Berat badan ideal adalah impian adalah impian setiap orang. 
+              Tidak hanya memiliki tubuh yang menunjang penampilan, 
+              berat badan ideal juga menandakan kondisi tubuh yang sehat.
+              Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI.
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="sex">Jenis Kelamin</label>
+                <div class="radio-group">
+                  <input type="radio" id="Male" name="sex" value="male" class="valid">
+                  <label for="Male">Lak-Laki</label>
+                  <input type="radio" id="Female" name="sex" value="female" class="valid">
+                  <label for="Female">Perempuan</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="age">Usia (Tahun)</label>
+                <input type="number" id="age" name="age" class="valid">
+              </div>
+              <div class="form-group">
+                <label for="weight">Berat Badan (kg)</label>
+                <input type="number" id="weight" name="weight" class="valid">
+              </div>
+              <div class="form-group">
+                <label for="height">Tinggi Badan (cm)</label>
+                <input type="number" id="height" name="height" class="valid">
+              </div>
+              <div class="form-group button-group">
+                <button type="submit" class="button-submit">Hitung BMI</button>
+                <button type="reset" class="button-reset">Reset</button>
+              </div>
+            </form>
+            <p>
+              Keunggulan Fitur:
+              </p><ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+              </ol>
+            <p></p>
+            <p>
+              kalkulator ini hanya boleh digunakan oleh orang dewasa 
+              (Wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI) 
+              dan tidak ada tindakan yang harus diambil berdasarkan nilainya 
+              selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter
+            </p>
+            <p>
+              kalkulator akan memberi ada gambaran tentang perbandingan berat badan 
+              anda dengan nilai umum. Index Masa Tubuh (BMI) dihitung sebagai berat 
+              badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda 
+              (dalam meter) atau BMI= kg/M<sup>2</sup>.
+            </p>
+          </div>
+
+          <!-- container untuk result berada di posisi sebelah kanan -->
+          <div class="container-item">
+            <h5>Hasil Perhitungan BMI</h5>
+            <div class="result">
+              <p>
+                <span id="result">Kategori</span>
+              </p>
+              <h2 id="bmi-result">0</h2>             
+              <p>
+                <span id="status-result">Status Berat Badan Anda</span>
+              </p>
+              <div class="form-group">
+                <button type="submit" class="button-submit">Download Hasil BMI</button>
+              </div>
+            </div>
+            <p>
+              <span id="between"></span>
+            </p>
+            <div class="form-group">
+              <button type="submit" class="button-submit">Konsultasi Ahli Gizi Via Aplikasi</button>
+              <button type="reset" class="button-submit">Register Online Ahli Gizi</button>
+            </div>
+            <p>
+              BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko
+              penyakit seseorang. Anda perlu konsultasi dengan dokter untuk mengetahui lebih lanjut 
+              mengenai risiko dan kekhawatiran anda terkait dengan berat badan anda.
+            </p>
+            <div class="result">
+              <p>
+                <span>Beberapa penyakit yang berasal dari kegemukan :</span><br>
+                <span>Diabetes</span><br>
+                <span>Hipertensi</span><br>
+                <span>Penyakit Jantung</span><br>
+                <span>Osteoathritis</span><br>
+              </p>
+              <div class="form-group">
+                <button type="submit" class="button-submit">Konsultasi Dokter Via Aplikasi</button>
+                <button type="reset" class="button-submit">Register Online Sekarang</button>
+              </div>
+            </div>
+            <!-- mengambil gambar dari folder asset -->
+            <!-- gambar playstore di sebelah kiri dan gambar appstore di sebelah kanan -->
+            <div class="image-group">
+              <img src="assets/playstore.png" alt="playstore">
+              <img src="assets/appstore.png" alt="appstore">
+          </div>
+        </div>
+      </div></main>
+
+      <!-- Ini adalah footer -->
+      <footer>
+        <div class="footer-item"> © 2024 | by. <a target="_blank" href="https://www.instagram.com/bayuhari_s/">Bayu Hari Septiawan</a></div>
+      </footer>
+
+      <script src="js/script.js"></script>
+  
+  </body></html>
